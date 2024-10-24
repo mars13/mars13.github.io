@@ -1,0 +1,27 @@
+{
+"skills": [
+    {
+        "id": "1",
+        "src": "./img/product-chain-1.png",
+        "title": "HTML",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": "2",
+        "src": "./img/tag-1.png",
+        "title": "CSS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": "3",
+        "src": "./img/feather-pen-2.png",
+        "title": "JavaScript",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": "4",
+        "src": "./img/feather-pen-1.png",
+        "title": "React",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }]
+}
