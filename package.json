@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://mars13.github.io/portfolio",
+  "homepage": "https://mars13.github.io/",
   "private": true,
   "engines": {
     "node": ">=12.x"
