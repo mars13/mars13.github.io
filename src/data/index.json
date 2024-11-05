@@ -1,27 +1,52 @@
 {
-"skills": [
-    {
-        "id": "1",
-        "src": "./img/product-chain-1.png",
-        "title": "HTML",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "id": "2",
-        "src": "./img/tag-1.png",
-        "title": "CSS",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "id": "3",
-        "src": "./img/feather-pen-2.png",
-        "title": "JavaScript",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "id": "4",
-        "src": "./img/feather-pen-1.png",
-        "title": "React",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }]
+    "skills": {
+        "programming_languages": [
+            {
+                "id": "1",
+                "icon": "fab fa-r-project",
+                "title": "R",
+                "description": "A programming language and environment designed for statistical computing and graphics, popular in bioinformatics."
+            },
+            {
+                "id": "2",
+                "icon": "fab fa-python",
+                "title": "Python",
+                "description": "A versatile programming language widely used in bioinformatics, data analysis, and machine learning."
+            },
+            {
+                "id": "3",
+                "icon": "fab fa-js",
+                "title": "JavaScript",
+                "description": "A dynamic programming language used for creating interactive web applications and enhancing user experience."
+            }
+        ],
+        "workflow_managers": [
+            {
+                "id": "4",
+                "icon": "fas fa-project-diagram",
+                "title": "Nextflow",
+                "description": "A workflow management system that enables scalable and reproducible scientific workflows using a domain-specific language."
+            },
+            {
+                "id": "5",
+                "icon": "fas fa-sitemap",
+                "title": "HPC Environment",
+                "description": ""
+            }
+        ],
+        "data_management_analysis": [
+            {
+                "id": "6",
+                "icon": "fas fa-database",
+                "title": "SQL",
+                "description": "A standardized language for managing and manipulating relational databases, essential for data retrieval and analysis."
+            },
+            {
+                "id": "7",
+                "icon": "fab fa-python",
+                "title": "Pandas",
+                "description": "A powerful Python library for data manipulation and analysis, providing data structures for efficiently handling structured data."
+            }
+        ]
+    }
 }

@@ -170,26 +170,28 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 85.333px;
+  padding: 15px 30px;
   background-color: var(--white);
   box-shadow: 0px 5.33px 80px 0px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
 .navbar--items > ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  gap: 42.667px;
+  align-items: center;
+  gap: 20px;
   text-decoration: none;
 }
 
 .navbar--items > ul > li {
   list-style: none;
+  padding-inline-start: 20px;
 }
 
 .navbar--content {
@@ -205,30 +207,43 @@ h3 {
   color: var(--primary);
 }
 
-@media (max-width: 900px) {
+.navbar > .btn {
+  padding: 4px 8px;
+  margin-left: 30px;
+}
+.nav--img {
+  order: -1;
+  margin: 0 auto 0px auto; /* Center align with margin */
+  width: auto; /* Reduce image width */
+  max-height: 40px;
+  max-width: 250px; /* Set maximum width */
+}
+
+@media (max-width: 500px) {
   .navbar {
-    padding: 15px 20px;
+    padding: 5px 20px;
   }
 
   .navbar--content {
-  color: var(--darkblue);
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  cursor: pointer;
+    color: var(--darkblue);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
   }
 
   .navbar--items > ul {
-    gap: 20px;
+    gap: 15px;
   }
 
   .navbar > .btn {
-    padding: 8px 8px;
-    margin-left: 10px;
+    padding: 4px 8px;
+    margin-left: 15px;
     font-size: 0.8rem;
   }
 }
+
 /* Navbar Style End */
 
 /* Hero Section */
@@ -290,21 +305,114 @@ h3 {
   object-fit: cover;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 900px) {
-  .hero--section {
+/* Hero Section End */
+
+/* Skills Section */
+/* Base section styling */
+.skills--section {
+    padding: 3rem 1.5rem;
+    background-color: #f7f9fc;
+}
+
+.portfolio--container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading */
+.skills--section--heading {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Category titles */
+.skills--category--title {
+    font-size: 1.75rem;
+    color: var(--primary);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Skills container and cards */
+.skills--section--cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.skills--cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Individual skill card styling */
+.skill--card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 180px;
+}
+
+.skill--card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling */
+.skill--icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.skill--card:hover .skill--icon {
+    color: var(--primary);
+}
+
+/* Skill title and description */
+.skill--title {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.skill--description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+/* Skills Section End */
+
+/* Responsive Screens */
+@media only screen and (max-width: 900px) {
+.hero--section {
     grid-template-columns: 1fr;
-    padding: 50px 20px; /* Adjust padding for smaller devices */
-    gap: 16px;
+    padding: 25px 10px; /* Adjust padding for smaller devices */
+    gap: 10px;
     text-align: center; /* Center-align text for a more mobile-friendly look */
   }
 
   .hero--section--img {
     order: -1;
+    padding-top: 80px; /* Adjust padding-top for smaller devices *
     margin: 0 auto 0px auto; /* Center align with margin */
     width: 80%; /* Reduce image width */
-    max-width: 250px; /* Set maximum width */
-    width: 70%; /* Reduce image width to 80% of the container */
+    max-width: 200px; /* Set maximum width */
   }
 
   .hero--section--content--box {
@@ -329,4 +437,239 @@ h3 {
   }
 }
 
-/* Hero Section End */
+@media only screen and (max-width: 1600px) {
+  .skills--section--heading {
+    font-size: 54px;
+    line-height: 70px;
+  }
+  .skills--section--container {
+    gap: 16px;
+  }
+  .skills--section--card {
+    gap: 28px;
+  }
+  .skills--section--card--content {
+    gap: 20px;
+  }
+  .skills--section--title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .skills--section--description {
+    font-size: 17.333px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .btn-outline-primary {
+    display: none;
+  }
+
+  .hero--section--title,
+  .hero--section-description,
+  .footer--content {
+    text-align: center;
+  }
+  .skills--section--container,
+  .about--section,
+  .portfolio--section--container,
+  .portfolio--container-box,
+  .footer--link--container,
+  .footer--items > ul,
+  .footer--content--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills--section,
+  .portfolio--container,
+  .hero--section--content,
+  .hero--section--content--box {
+    align-items: center;
+  }
+  .portfolio--container-box {
+    gap: 30px;
+  }
+  .skills--section,
+  .testimonial--section,
+  .contact--section,
+  .footer--container {
+    gap: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .about--section {
+    gap: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .testimonial--section--card {
+    padding: 25px;
+  }
+  .hero--section--title,
+  .skills--section--heading,
+  .sections--heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .contact--form--container {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer--social--icon > ul,
+  .footer--items > ul {
+    padding: 0;
+    align-items: center;
+  }
+  .divider {
+    margin: 20px;
+  }
+}
+
+/* Hamburger menu  */
+
+.nav__hamburger {
+  display: none;
+  width: 1.875rem;
+  height: 1.313rem;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.nav__hamburger__line {
+  display: block;
+  height: 0.188rem;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 0.625rem;
+  transition: all ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav__hamburger {
+    display: flex;
+    z-index: 200;
+  }
+  .navbar--items {
+    display: flex;
+  }
+  .navbar--items {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255);
+    top: -20rem;
+    left: 0;
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+  }
+  .navbar--items ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0 0.6rem;
+    z-index: -100;
+  }
+  .navbar--items ul li {
+    text-align: center;
+  }
+  .navbar--items ul li a {
+    padding: 0.5rem;
+  }
+  .navbar--items {
+    z-index: -1000;
+  }
+  .navbar--items.active {
+    top: 30px;
+  }
+  .nav__hamburger.active :nth-child(1) {
+    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+  }
+
+  .nav__hamburger.active :nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__hamburger.active :nth-child(3) {
+    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+  }
+}
+
+/* Responsive Screens Ends*/
+
+/* Construction */
+/* Centering the construction banner on the page */
+.construction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    background: linear-gradient(135deg, #ff4d4d, #ff751a);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading styling */
+.construction h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    animation: pulse 2s infinite;
+}
+
+/* Pulse animation for heading */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Subtext styling */
+.construction p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    max-width: 600px;
+    color: #f2f2f2;
+    margin-bottom: 2rem;
+}
+
+/* Optional: Add a caution icon with animation */
+.construction::before {
+    content: "⚠️";
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    animation: shake 1s infinite;
+}
+
+/* Shake animation for the caution icon */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-4px);
+    }
+    50% {
+        transform: translateX(4px);
+    }
+}
+
+/* construction Section End */
